@@ -14,6 +14,7 @@ import { Section } from '@/components/Section'
 import { QRCodeGenerator } from '@/components/QRCodeGenerator/QRCodeGenerator.tsx'
 import { useState } from 'react'
 import { IoIosArrowForward } from 'react-icons/io'
+import { Place } from '@/schemas/Chat.ts'
 
 export type DictaphoneProps = {
   speechLanguage: SpeechLanguages
@@ -54,7 +55,7 @@ export const Dictaphone = (props: DictaphoneProps) => {
       .then(
         (response) => {
           const newPlaces = response.data.places.reduce(
-            (acc, place) =>
+            (acc: string, place: Place) =>
               `${acc};${place.name},${place.geometry.location.lat},${place.geometry.location.lng}`,
             ''
           )

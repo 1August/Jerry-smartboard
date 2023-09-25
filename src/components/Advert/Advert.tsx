@@ -3,6 +3,8 @@ import bg_ad from '@/assets/bg-vertical-ad.png'
 import pexel_69 from '@/assets/pexels-photo-2499769.png'
 import pexel_71 from '@/assets/pexels-photo-2765871.png'
 import pexel_80 from '@/assets/pexels-photo-3046480.png'
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-ignore
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import { cn } from '@/lib/utils.ts'
 
