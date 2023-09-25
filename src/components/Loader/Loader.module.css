@@ -1,0 +1,24 @@
+.loaderWrapper {
+  --loader-diameter: 3rem;
+  --loader-width: calc(var(--loader-diameter) / 6);
+  --loader-color: coral;
+
+  width: var(--loader-diameter);
+  height: var(--loader-diameter);
+  border: var(--loader-width) solid var(--loader-color);
+  border-top-color: transparent;
+  border-radius: 50%;
+
+  animation-name: loader;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes loader {
+  from {
+    rotate: 0turn;
+  }
+  to {
+    rotate: 1turn;
+  }
+}
